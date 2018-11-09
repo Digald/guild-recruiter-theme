@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="<?php bloginfo('description');?>">
-    <title><? bloginfo('name'); ?><?php wp_title('|');?></title>
+    <title><?php bloginfo('name'); ?><?php wp_title('|');?></title>
     <?php wp_head(); ?>
 </head>
 <?php 
@@ -16,4 +16,10 @@
     endif;
 ?>
 <body <?php body_class($body_class); ?>>
-    Hello World
+    <nav class="navcontainer">
+        <div class="navcontainer__brand">
+            <p>Image or Logo</p>
+        </div>
+        <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+  
+    </nav>
