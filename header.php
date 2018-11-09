@@ -16,10 +16,12 @@
     endif;
 ?>
 <body <?php body_class($body_class); ?>>
-    <nav class="navcontainer">
-        <div class="navcontainer__brand">
-            <p>Image or Logo</p>
-        </div>
-        <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
-  
-    </nav>
+    <div class="page-content">
+        <nav class="navcontainer">
+            <div class="navcontainer__brand">
+                <p>Image or Logo</p>
+            </div>
+            <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+        </nav>
+    
+    
